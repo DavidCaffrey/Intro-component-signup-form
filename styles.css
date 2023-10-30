@@ -90,12 +90,21 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--clr-prime-red);
     background-image: url('images/bg-intro-desktop.png');
+    line-height: 1.5;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+input,button,textarea,select{
+  font:inherit;
 }
 
 .signUp-section{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
     justify-items: center;
+    height: 100vh;
 }
 
 .info-container{
@@ -106,10 +115,25 @@ body{
     display: flex;
     flex-direction: column;
 }
+.form-banner{
+  background-color:var(--clr-accent-blue);
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.form-banner p{
+  margin: 8px 0;
+  font-size: 1.2rem;
+}
 
 .signUp-form{
     display: flex;
     flex-direction: column;
+}
+
+.btn-submit{
+  background-color:var(--clr-prime-green);
 }
 
 .attribution {
